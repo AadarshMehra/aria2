@@ -3,11 +3,10 @@ from urllib import request
 
 url = r'https://trackerslist.com/all_aria2.txt'
 
-
 fileOpen = request.urlopen(url)
 info = fileOpen.read()
 
-static="dir=/content/drive/Shareddrives/Movies/Movies
+static="dir=/content/drive/Shareddrives/Movies/Movies/
 always-resume=true
 max-concurrent-downloads=10
 enable-rpc=true
