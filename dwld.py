@@ -6,19 +6,7 @@ url = r'https://trackerslist.com/all_aria2.txt'
 fileOpen = request.urlopen(url)
 info = fileOpen.read()
 
-static="dir=/content/drive/Shareddrives/Movies/Movies/
-always-resume=true
-max-concurrent-downloads=10
-enable-rpc=true
-rpc-listen-all=true
-max-connection-per-server=16
-user-agent=qBittorrent/4.3.3
-peer-agent=qbittorrent/4.3.3
-peer-id-prefix=-qB4330-
-disk-cache=0
-file-allocation=none
-seed-ratio=1.5
-bt-tracker="
+static="dir=/content/drive/Shareddrives/Movies/Movies\nalways-resume=true\nmax-concurrent-downloads=10\nenable-rpc=true\nrpc-listen-all=true\nmax-connection-per-server=16\nuser-agent=qBittorrent/4.3.3\npeer-agent=qbittorrent/4.3.3\npeer-id-prefix=-qB4330-\ndisk-cache=0\nfile-allocation=none\nseed-ratio=1.5\nbt-tracker="
 info=info.decode("utf-8")
 info=(static+info)
 f=open(r"/home/.aria2/aria2.conf", "x")
